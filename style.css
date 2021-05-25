@@ -1,0 +1,463 @@
+body, html {
+    height:100%;
+    width:100%;
+}
+
+#landing {
+    margin: 0;
+    /* display: flex; */
+    /* align-items: center; */
+
+    /* position: absolute; */
+
+}
+
+a.sb {
+    width: 0;
+    height: 0;
+}
+
+.pp-tooltip {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#defaultCanvas0 {
+    z-index: -2000;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    /* background-color: black; */
+}
+
+/* @media (min-width: 1000px) {
+    .grid-container {
+        display: grid;
+        justify-items: end;
+        align-items: stretch;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "i1 i2 i3 i4""i5 i6 i7 i8""i9 i10 i11 i12";
+    }
+  } */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "i1 i2 i3 i4""i5 i6 i7 i8""i9 i10 i11 i12";
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: 1fr 1fr; */
+    grid-column-gap: 0;
+    justify-items: center;
+    padding-left: 5vw;
+    align-items: stretch;
+
+    grid-template-columns: auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+     */
+}
+
+.i1 {
+    grid-area: i1;
+   
+
+}
+
+.i2 {
+    grid-area: i2;
+    
+
+}
+
+.i3 {
+    grid-area: i3;
+
+
+}
+
+.i4 {
+    grid-area: i4;
+
+}
+
+.i5 {
+    grid-area: i5;
+ 
+
+}
+
+.i6 {
+    grid-area: i6;
+    
+
+}
+
+.i7 {
+    grid-area: i7;
+    
+
+}
+
+.i8 {
+    grid-area:i8;
+
+}
+
+.i9 {
+    grid-area:i9;
+
+}
+
+.i10 {
+    grid-area: i10;
+
+}
+
+.i11 {
+    grid-area: i11;
+
+}
+
+.i12 {
+    grid-area: i12;
+
+}
+
+
+.grid-container img {
+    max-height: 15vw;
+    /* width: 240px;
+    padding: 2px 30px; */
+    /* padding-top: 10px; */
+    
+    
+}
+
+
+  
+
+canvas {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+#main {
+    height: 100%;
+    position: relative;
+    /* z-index: 20; */
+}
+
+section {
+    height: 100vh;
+    background-color: black;
+
+}
+
+#hi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: black; */
+
+}
+
+/* Hi! */
+/* #defaultCanvas1{ */
+/* padding-top:20vh; */
+
+/* } */
+
+#werkhead {
+    left: -150px;
+    color: grey;
+    top: 250px;
+}
+
+#aboutpg {
+    background-color: white;
+}
+
+.aboutText p {
+    padding-right: 8%;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 100;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+.aboutText p {
+    padding-top: 5%;
+
+}
+
+canvas #hiweareMeld {
+    width: 10vw;
+    height: 10vh;
+}
+
+#contact {
+    text-align: right;
+    padding-right: 20%;
+}
+
+
+label {
+    position: relative;
+    font-size: 42px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top: 1px;
+
+
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    font-size: 42px;
+    /* display: block; */
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background: none !important;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid grey;
+    transition: 0.5s ease-in-out;
+}
+
+input#email {
+    text-transform: none;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid grey;
+    transition: 1s;
+}
+
+input:-internal-autofill-selected {
+    background: none !important;
+
+}
+
+textarea {
+    font-size: 42px;
+    margin-left: 10px;
+    /* text-transform: uppercase; */
+    font-weight: 300;
+    background: none !important;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid grey;
+    resize: none;
+    overflow: hidden;
+    padding: 0;
+    height: 50px;
+    transition: 0.8s ease-in-out;
+    width: auto;
+}
+
+
+
+textarea:focus {
+    background-color: #141414 !important;
+    outline: none;
+    border-bottom: 2px solid grey;
+    height: 40vh;
+    transition: 1s;
+}
+
+button {
+    /* align-items: center; */
+    background-color: black;
+    border: white solid 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    /* display: flex; */
+    font-size: 32px;
+    margin: 4px 2px;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+/* section#page-4 {} */
+
+.sheading {
+    /* text-align: left; */
+    font-size: 10vh;
+    font-weight: 800;
+    position: absolute;
+    color: #141414;
+    text-transform: uppercase;
+    /* transform-origin: 0 0; */
+    z-index: -1;
+    top: 250px;
+    left: -200px;
+    transform: rotate(-90deg);
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    #msgarea {
+        flex-direction: column;
+    }
+
+    #hi {
+        flex-direction: column;
+    }
+
+    #hiweareMeld {
+        height: 10vh !important;
+    }
+
+    /* wearemeld */
+    #defaultCanvas2 {
+        padding-left: 10vw;
+        padding-top: 15vw;
+    }
+
+    /* Hi! */
+    /* #defaultCanvas1{ */
+    /* transform: scale(0.9,0.9); */
+    /* padding-top: 10vw; */
+    /* padding-left: 20vw; */
+
+    /* } */
+
+    .aboutText p {
+        /* padding: 7%; */
+        margin-top: -50px;
+        padding-right: 15%;
+        padding-left: 5%;
+        /* padding-top: 20%; */
+        /* margin-top: 10%; */
+
+    }
+
+    h2.sheading{
+        white-space: nowrap;
+        right: 35vw;
+        top: 80vw;
+    }
+
+    h2#werkhead{
+        top: 90vw;
+        left: 35vw;
+        
+
+    }
+    .grid-container {
+        display: grid;
+        /* grid-template-areas: "i1 i2 i3 i4""i5 i6 i7 i8""i9 i10 i11 i12"; */
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: 1fr 1fr; */
+
+        justify-items: center;
+        /* align-items: ; */
+        padding: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* padding-left: 0; */
+        /* grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+       */
+    }
+
+    .i1 {
+        grid-area: i1;
+    }
+
+    .i2 {
+        grid-area: 1/2;
+    }
+
+    .i3 {
+        grid-area: 2/1;
+    }
+
+    .i4 {
+        grid-area: 2/2;
+    }
+
+    .i5 {
+        grid-area: 3/1;
+    }
+
+    .i6 {
+        grid-area: 3/2;
+    }
+
+    .i7 {
+        grid-area: 4/1;
+    }
+
+    .i8 {
+        grid-area: 4/2;
+    }
+
+    .i9 {
+        grid-area: 5/1;
+    }
+
+    .i10 {
+        grid-area: 5/2;
+    }
+
+    .i11 {
+        grid-area: 6/1;
+    }
+
+    .i12 {
+        grid-area: 6/2;
+    }
+
+    .grid-container img {
+        min-height: 30vw !important;
+
+    }
+
+
+    #contact label{
+        font-size: 80px;
+        padding-top: 100px;
+
+    }
+    #contact input{
+        font-size: 58px;
+    }
+    #contact p {
+        font-size: 32px;
+        padding-right: 0;
+        padding-left: 10%;
+        text-align: left;
+    }
+
+    #contact button{
+
+        margin-top: 5%;
+    }
+
+    /* body {
+        background-color: brown !important;
+    } */
+
+
+}

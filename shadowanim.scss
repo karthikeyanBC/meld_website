@@ -1,0 +1,38 @@
+// .grid-container img {
+   
+// }
+
+@for $i from 1 through 12 {
+    
+      
+      // :nth-child(1-9) 
+      .i#{$i} {
+        -webkit-animation: shadow-drop-br 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+        animation: shadow-drop-br 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+        // Delay the animation. Delay increases as items loop.
+        animation-delay: $i * (1s/3);
+      }
+    
+  }
+
+@-webkit-keyframes shadow-drop-br {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-br {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.3);
+              box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
