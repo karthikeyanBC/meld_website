@@ -12,7 +12,7 @@ let myp5 = new p5((sketch) => {
     }
  
     myCanvas.parent("hiweareMeld");
-    mont = sketch.loadFont("/res/montySb.ttf");
+    mont = sketch.loadFont("res/montySb.ttf");
     sketch.textFont(mont);
     sketch.textSize(sketch.height/2);
     sketch.textAlign(sketch.CENTER);
