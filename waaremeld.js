@@ -11,8 +11,8 @@
       }
      
       myCanvas.parent("wearemeld");
-      mont = sketch.loadFont("/res/montySb.ttf");
-      logo= sketch.loadImage("/res/meld2.png");
+      mont = sketch.loadFont("res/montySb.ttf");
+      logo= sketch.loadImage("res/meld2.png");
       logo.loadPixels();
       sketch.textFont(mont);
       sketch.textSize(100);
