@@ -6,10 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
          if (content.classList.contains("revel_project")) {
              button.innerHTML = 'Show Less <i class="bi bi-arrow-up-short fs-4"></i>';
              button.classList.add("mt-4");
+             setTimeout(() => {
+                document.getElementById("scroll-to-view").scrollIntoView({ behavior: "smooth" });
+            }, 1000);
          } else {
              button.innerHTML = 'Show More <i class="bi bi-arrow-down-short fs-4"></i>';
              button.classList.remove("mt-4");
          }
+         
      });
  });
  

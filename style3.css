@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 
@@ -16,6 +16,9 @@
  :root{
   interpolate-size: allow-keywords;
  }
+ .bg-dark {
+  background-color: #000000 !important;
+}
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -30,7 +33,7 @@
   
   body  {
     margin: 0;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
   }
   
   
@@ -370,6 +373,7 @@
     object-fit: cover;
     border-radius: 15px;
     object-position: top;
+    cursor: pointer
   }
   
   .grid-wrapper {
@@ -416,7 +420,7 @@
     left: 0;
     width: 100%;
     height: 200px;
-    background: linear-gradient(to bottom, rgb(0 0 0 / 0%) 0%, rgb(33 37 41) 100%);
+    background: linear-gradient(to bottom, rgb(0 0 0 / 0%) 0%, rgb(0 0 0) 100%);
     pointer-events: none;
     z-index: 1;
 }
@@ -428,10 +432,62 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-items: center;
 }
+.grid-container{
+  margin-bottom: 170px;
+}
+#show-more-btn{
+  margin-top: -100px;
+  z-index: 2;
+  position: relative;
+}
 .logo_section img {
   object-fit: contain;
   width: 190px;
   height: auto;
   place-items: center;
   margin-bottom: 30px;
+}
+.service_sections p{
+  font-weight: normal;
+  font-size: 12px;
+}
+hr{
+  color: white !important;
+}
+.tilt-icon i {
+  transform: rotate(45deg);
+  font-size: 25px;
+}
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: gray;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+}
+.service_sections img {
+  min-width: 95px;
+}
+.form_css input.form-control,.form_css textarea.form-control{
+  background: #C1C1C1;
+  border: none;
+}
+.form_css label{
+  color: #5e5d5d;
+  font-size: 14px;
+}
+.logo_section img {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logo_section img:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 991px) {
+  .grid-wrapper {
+    grid-template-columns: auto;
+  }
 }
