@@ -159,56 +159,56 @@
     <div class="w-75 p-5 bg-white rounded mx-auto">
         <h2 class="text-center text-center fw-medium fs-1">Have an idea? Let’s team up!</h2>
         <p class="text-center">Fill out the following to get your project started</p>
-        <form class="form_css" action="https://formspree.io/mlebdgdb">
+        <form class="form_css" action="https://formspree.io/mlebdgdb" method="POST">
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label class="form-label">Your Name<span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" required>
+                    <input type="text" name="nameoftheperson" class="form-control" required>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Company</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="company">
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label class="form-label">Your Email<span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" required>
+                    <input type="email" class="form-control" name="email" required>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Your Phone Number</label>
-                    <input type="tel" class="form-control">
+                    <input type="tel" class="form-control" name="phonenumber">
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label class="form-label">Tell us more about your project</label>
-                    <textarea class="form-control" rows="4"></textarea>
+                    <textarea class="form-control" rows="4" name="message"></textarea>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">What services are you interested in?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="branding">
+                    <input class="form-check-input" name="services[]" value="Branding & Identity" type="checkbox" id="branding">
                     <label class="form-check-label" for="branding">Branding & Identity</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="web-design">
+                    <input class="form-check-input" name="services[]" value="Website Design & Development" type="checkbox" id="web-design">
                     <label class="form-check-label" for="web-design">Website Design & Development</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="brand-strategy">
+                    <input class="form-check-input" name="services[]" value="Brand Strategy" type="checkbox" id="brand-strategy">
                     <label class="form-check-label" for="brand-strategy">Brand Strategy</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="packaging">
+                    <input class="form-check-input" name="services[]" value="Packaging & Print Design" type="checkbox" id="packaging">
                     <label class="form-check-label" for="packaging">Packaging & Print Design</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="social-media">
+                    <input class="form-check-input" name="services[]" value="Social Media Management" type="checkbox" id="social-media">
                     <label class="form-check-label" for="social-media">Social Media Management</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="performance-marketing">
+                    <input class="form-check-input" name="services[]" value="Performance Marketing & Miscellaneous Brand Design" type="checkbox" id="performance-marketing">
                     <label class="form-check-label" for="performance-marketing">Performance Marketing & Miscellaneous Brand Design</label>
                 </div>
                 </div>
