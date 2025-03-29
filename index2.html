@@ -1,251 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
-    <!-- <link rel="stylesheet" href="style2.css"> -->
-     <link rel="stylesheet" href="style3.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>MELD</title>
+	<meta name= "Description" content="MELD is a multidisciplinary design studio, specialized in branding, social media and content creation. "/>    
+	<link rel="image_src" href="res/meld2.png">
+	<meta property="og:image" content="res/meldog.png" />
+
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+	<script src="landing.js"></script>
+	<script src="hiMeld.js"></script>
+	<script src="waaremeld.js"></script>
+
+    <link rel="icon" type="image/png" href="faviconmeld.png"/>
+
+	<!-- <script src="/res/pageable.js"> </script> -->
+	<!-- <link rel="stylesheet" href="/res/pageable.css"> -->
+	<!-- <link rel="stylesheet" href="res/smoothbox.css"> -->
+	<!-- <link rel="stylesheet" href="venobox.css"> -->
+	<link rel="stylesheet" href="lightgallery.css">
+	<!-- <link rel="stylesheet" href="nanogallery2.min.css"> -->
+	<link rel="stylesheet" href="css/lightgallery.css">
+	<link rel="stylesheet"  href="res/jquery.pagepiling.css" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="shadowanim.css">
+	<!--jQuery-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+	<script src="res/jquery.pagepiling.js"></script>
+	
+	<!-- <script type="text/javascript" src="js/smoothbox.min.js"></script> -->
+	<!-- <script src="venobox.min.js"></script> -->
+	<!-- <script src="js/jquery.nanogallery2.min.js"></script> -->
+	
+
 </head>
-<style>
-    .bg-dark {
-        background-color: #000000 !important;
-      }
-</style>
-<body class="bg-dark">
-    
-    <nav class="navbar navbar-expand-lg py-4">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="/assests2/logo.png" alt="" class="img-fluid"></a>
-           <button class="btn bg-white rounded-pill px-4 py-1 d-flex align-items-center tilt-icon fw-normal">Contact<i class="bi bi-arrow-up-short ms-1"></i></button>
-        </div>
-    </nav>
 
-  <section class="container hero-section vh-100 d-flex flex-column justify-content-center align-items-center text-center">
-        <img src="/assests2/heroimg.png" alt="" class="img-fluid">
-        <p class="text-white fs-5 mt-4">We are a design driven branding studio that has delivered 50 brands since 2017</p>
-  </section>
+<body>
+	
+	
+	<div id="main">
+		<div id="pagepiling">
+		<section data-anchor="Page 1" class="section">
+			<div id="landing"></div>
+			
+		</section>
+		
 
-  <section class="container pb-5">
-    <div class=" section-title mb-5 gap-3">
-        <span class="line"></span>
-        <h3 class="text-white text-center">What We Do</h3>
-        <span class="line"></span>
-    </div>
-    <div class="row d-flex justify-content-md-between justify-content-center service_sections gap-5 flex-wrap">
-        <div class="col d-flex flex-column align-items-center gap-2">
-            <img src="/assests2/gallery/ser-1.png" alt="" class="img-fluid">
-            <p class="text-white text-center">Branding & Identity</p>
-        </div>
-        <div class="col d-flex flex-column align-items-center gap-2">
-            <img src="/assests2/gallery/ser-2.png" alt="" class="img-fluid">
-            <p class="text-white text-center">Website Design & <br>Development</p>
-        </div>
-        <div class="col d-flex flex-column align-items-center gap-2">
-            <img src="/assests2/gallery/ser-3.png" alt="" class="img-fluid">
-            <p class="text-white text-center">Brand Strategy</p>
-        </div>
-        <div class="col d-flex flex-column align-items-center gap-2">
-            <img src="/assests2/gallery/ser-4.png" alt="" class="img-fluid">
-            <p class="text-white text-center">Packaging & <br>Print Design</p>
-        </div>
-        <div class="col d-flex flex-column align-items-center gap-2">
-            <img src="/assests2/gallery/ser-5.png" alt="" class="img-fluid">
-            <p class="text-white text-center">Social Media <br>Management</p>
-        </div>
-        <div class="col d-flex flex-column align-items-center gap-2">
-            <img src="/assests2/gallery/ser-6.png" alt="" class="img-fluid">
-            <p class="text-white text-center">Performance Marketing & <br>Miscellaneous Brand Design</p>
-        </div>
-    </div>
-  </section>
+		<section data-anchor="Page 2" class="section">
+			<div id="hi">
 
-  <section class="container pb-5 mt-5 grid-container">
-    <div class=" section-title mb-5 gap-3">
-        <span class="line"></span>
-        <h3 class="text-white text-center">Gallery</h3>
-        <span class="line"></span>
-    </div>
-    
 
-    <div class="grid-suspenser">
-        <div class="grid-wrapper">
-            <div>
-                <img src="/assests2/gallery/gal-1.png" alt="" class="img-fluid">
-            </div>
-            <div class="wide-full">
-                <img src="/assests2/gallery/gal-2.png" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="/assests2/gallery/gal1.1.png" alt="" class="img-fluid">
-            </div>
-            <div class="tall wide-full">
-                <img src="/assests2/gallery/gal-5.png" alt="" class="img-fluid">
-            </div>
-            <div class="tall">
-                <img src="/assests2/gallery/gal-4.png" alt="" class="img-fluid">
-            </div>
-            <div class="wide-full">
-                <img src="/assests2/gallery/gal-3.png" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="/assests2/gallery/gal-6.png" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="/assests2/gallery/gal-7.png" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="/assests2/gallery/gal-8.png" alt="" class="img-fluid">
-            </div>
-            <div class="wide-full">
-                <img src="/assests2/gallery/gal-9.png" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="/assests2/gallery/gal-10.png" alt="" class="img-fluid">
-            </div>
-            <div class="tall wide-full">
-                <img src="/assests2/gallery/gal-11.png" alt="" class="img-fluid">
-            </div>
-            <div class="tall">
-                <img src="/assests2/gallery/gal-12.png" alt="" class="img-fluid">
-            </div>
-            <div class="wide-full xl">
-                <img src="/assests2/gallery/gal-13.png" alt="" class="img-fluid">
-            </div>
-            <div class="wide-full xl">
-                <img src="/assests2/gallery/gal-14.png" alt="" class="img-fluid">
-            </div>
-            <div class="wide">
-                <img src="/assests2/gallery/gal-15.png" alt="" class="img-fluid">
-            </div>
-            <div>
-                <img src="/assests2/gallery/gal-16.png" alt="" class="img-fluid">
-            </div>
-            
-            
-        </div>
-        <div id="scroll-to-view"></div>
-    </div>
-    <button id="show-more-btn" class="btn rounded-pill border-white text-white px-4 py-1 mx-auto d-flex align-items-center gap-2 align-content-center">Show More <i class="bi bi-arrow-down-short fs-4"></i></button>
-  </section>
+				<div id="hiweareMeld"></div>
+				
+				<div class="aboutText">
+					<div id="wearemeld"></div>
+					<p>
+						We're a design studio. At MELD we help our clients reach their goals for their businesses by
+						providing them with creative visual expressions.
+						We provide creative direction, corporate branding & consultancy, packaging design, editorial
+						design, graphical illustration and social media visual content creation.
+					</p>
+				</div>
+			</div>
+		</section>
 
- 
-  <section class="container pb-5 mb-5">
-    <div class=" section-title  gap-3">
-        <span class="line"></span>
-        <h3 class="text-white text-center">Gallery</h3>
-        <span class="line"></span>
-        
-    </div>
-    <p class="text-white text-center mb-5">Click on their logos to visit their websites</p>
-    <div class="logo_section">
-       <img src="/assests2/gallery/logo-1.png" alt="" class="img-fluid">
-       <img src="/assests2/gallery/logo-2.png" alt="" class="img-fluid">
-       <img src="/assests2/gallery/logo-3.png" alt="" class="img-fluid">
-       <img src="/assests2/gallery/logo-4.png" alt="" class="img-fluid">
-       <img src="/assests2/gallery/logo-5.png" alt="" class="img-fluid">
-       <img src="/assests2/gallery/logo-6.png" alt="" class="img-fluid">
-       <img src="/assests2/gallery/logo-7.png" alt="" class="img-fluid">
-       <img src="/assests2/gallery/logo-8.png" alt="" class="img-fluid">
-       <img src="/assests2/gallery/Add more.png" alt="" class="img-fluid">
-      </div>
-  </section>
+		<section data-anchor="Page 3" class="section" id="aboutpg">
+			<div >
+				<h2 class="sheading" id="werkhead">Our work</h2>
+				<div class="grid-container" id="lightgallery" data-nanogallery2>
+					
+					<div class="i1" >
 
-  <section class="bg-white pb-5">
-    <div class="w-75 p-5 bg-white rounded mx-auto">
-        <h2 class="text-center text-center fw-medium fs-1">Have an idea? Let’s team up!</h2>
-        <p class="text-center">Fill out the following to get your project started</p>
-        <form class="form_css" action="https://formspree.io/mlebdgdb" method="POST">
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label class="form-label">Your Name<span class="text-danger">*</span></label>
-                    <input type="text" name="nameoftheperson" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">Company</label>
-                    <input type="text" class="form-control" name="company">
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label class="form-label">Your Email<span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" name="email" required>
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">Your Phone Number</label>
-                    <input type="tel" class="form-control" name="phonenumber">
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label class="form-label">Tell us more about your project</label>
-                    <textarea class="form-control" rows="4" name="message"></textarea>
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">What services are you interested in?</label>
-                <div class="form-check">
-                    <input class="form-check-input" name="services[]" value="Branding & Identity" type="checkbox" id="branding">
-                    <label class="form-check-label" for="branding">Branding & Identity</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" name="services[]" value="Website Design & Development" type="checkbox" id="web-design">
-                    <label class="form-check-label" for="web-design">Website Design & Development</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" name="services[]" value="Brand Strategy" type="checkbox" id="brand-strategy">
-                    <label class="form-check-label" for="brand-strategy">Brand Strategy</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" name="services[]" value="Packaging & Print Design" type="checkbox" id="packaging">
-                    <label class="form-check-label" for="packaging">Packaging & Print Design</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" name="services[]" value="Social Media Management" type="checkbox" id="social-media">
-                    <label class="form-check-label" for="social-media">Social Media Management</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" name="services[]" value="Performance Marketing & Miscellaneous Brand Design" type="checkbox" id="performance-marketing">
-                    <label class="form-check-label" for="performance-marketing">Performance Marketing & Miscellaneous Brand Design</label>
-                </div>
-                </div>
-              
-            </div>
-          
-            <div class="text-center">
-                <button type="submit" class="btn btn-dark bg-white text-dark rounded-pill  d-flex align-items-center tilt-icon py-1 mx-auto" style="padding: 20px 50px 20px 61px;">Send<i class="bi bi-arrow-up-short ms-1"></i></button>
-            </div>
-        </form>
-    </div>
-  </section>
+						<a  href="sliderimgs/Catnap01.jpg " class="sb , venobox" data-gall>
+							<img src="logo/catnap-01.png" alt="">
+						</a>
+					</div>
+					
+					<a href="sliderimgs/Catnap02.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/Catnap03.jpg" class="sb , venobox" data-gall></a>
 
-  <footer class="container-fluid d-flex flex-wrap justify-content-center justify-content-md-between align-items-center py-3 my-4 px-4">
-    <div class="col-md-4 d-flex align-items-center align-items-md-start flex-column gap-3">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-       <img src="/assests2/logo.png" alt="" width="300" class="img-fluid">
-      </a>
-      <div class="d-flex gap-3">
-        <div class="text-white d-flex gap-2"><i class="bi bi-envelope"></i><p> hey@itsmeld.com</p></div>
-        <div class="text-white d-flex gap-2"><i class="bi bi-telephone"></i><p>  +91 9790896904</p></div>
-      </div>
-    </div>
+					<div class="i2">
+						<a href="sliderimgs/MadMaze01.jpg " class="sb , venobox" data-gall>
+							<img src="logo/madmaze-01.png" alt="">
+						</a>
+					</div>
+					<a href="sliderimgs/MadMaze02.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/MadMaze03.jpg" class="sb , venobox" data-gall></a>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-twitter-x"></i></a></li>
-      <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-instagram"></i></a></li>
-      <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-linkedin"></i></a></li>
-      <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-facebook"></i></a></li>
-    </ul>
+					<div class="i3">
+						<a href="sliderimgs/GoGoli-01.jpg" class="sb , venobox" data-gall>
+							<img src="logo/gogoli-01.png" alt="">
+						</a>
+					</div>
+					<a href="sliderimgs/GoGoli-02.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/GoGoli-03.jpg" class="sb , venobox" data-gall></a>
 
-    <div class="w-100">
-        <hr>
-        <p class="text-muted text-center">Copyright © 2025 All Rights Reserved </p>
-    </div>
-  </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script2.js"></script>
+					<div class="i4">
+						<a href="sliderimgs/Caveman04.jpg" class="sb , venobox" data-gall>
+							<img src="logo/Logos_Caveman.png" alt="">
+						</a>
+					</div>
+					<a href="sliderimgs/Caveman05.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/Caveman06.jpg" class="sb , venobox" data-gall></a>
+
+					<div class="i5">
+						<a href="sliderimgs/Evolve01.jpg" class="sb , venobox" data-gall>
+							<img src="logo/Logos_Evolve.png" alt="">
+						</a>
+					</div>
+					<a href="sliderimgs/Evolve02.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/Evolve03.jpg" class="sb , venobox" data-gall></a>
+
+					<div class="i6">
+						<a href="sliderimgs/Zeal-Fit01.jpg" class="sb , venobox" data-gall>
+							<img src="logo/Logos_Zeal Fit.png" alt="">
+						</a>
+					</div>
+					<a href="sliderimgs/Zeal-Fit02.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/Zeal-Fit03.jpg" class="sb , venobox" data-gall></a>
+
+					<div class="i7">
+						<a href="sliderimgs/ProCuts01.jpg" class="sb , venobox" data-gall>
+							<img src="logo/Logos_ProCuts.png" alt="">
+						</a>
+					</div>
+					<a href="sliderimgs/ProCuts02.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/ProCuts03.jpg" class="sb , venobox" data-gall></a>
+
+					<div class="i8">
+						<a href="sliderimgs/Thulir01.jpg" class="sb , venobox" data-gall>
+							<img src="logo/thulir-01.png" alt="">
+						</a>
+					</div>
+					<a href="sliderimgs/Thulir02.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/Thulir03.jpg" class="sb , venobox" data-gall></a>
+
+					<div class="i9">
+						<a href="#">
+							<img src="logo/jugaad-01.png" alt="">
+						</a>
+					</div>
+
+					<div class="i10">
+						<a href="sliderimgs/Nutri-Immuno01.jpg" class="sb , venobox" data-gall>
+							<img src="logo/Logos_Nutri Immuno.png" alt="">
+						</a>
+					</div>
+					<a href="sliderimgs/Nutri-Immuno02.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/Nutri-Immuno03.jpg" class="sb , venobox" data-gall></a>
+
+					<div class="i11">
+						<a href="sliderimgs/Dr01.jpg" class="sb , venobox" data-gall>
+							<img src="logo/drbraces-01.png" alt="">
+						</a>
+					</div>
+					<a href="sliderimgs/Dr02.jpg" class="sb , venobox" data-gall></a>
+					<a href="sliderimgs/Dr03.jpg" class="sb , venobox" data-gall></a>
+
+					<div class="i12">
+						<a href="#">
+							<img src="" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+	
+	</section>
+
+	<section data-anchor="Page 4" id="contactSection" class="section">
+		<h2 class="sheading">Get in touch</h2>
+		<div id="contact">
+			
+		<form action="https://formspree.io/mlebdgdb" method="POST">
+			<label>
+				Hi, My name is	
+				<input type="text" id="contactname" name="nameoftheperson" required>
+			</label>
+			<label>
+				This is my email
+				<input type="text" id="email" name="_replyto" required>
+			</label>
+			<label>	I'm looking for
+				<textarea cols="23" name="message" id="msgtext"></textarea></label>
+	
+
+			<!-- your other form fields go here -->
+
+			<button type="submit">Send</button>
+		</form>
+		<p>EMAIL : contactus@meldweare.com   //   CALL : +91 9790896904 / +91 7338880941  </p>
+		<p></p>
+	</div>
+	</section>
+
+ </div>
+</div>
+
+	
+
+
+
+<script src="js/lightgallery.js"></script>
+	<script src="main.js"></script>
 </body>
+
 </html>
