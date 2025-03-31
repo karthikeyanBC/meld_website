@@ -413,6 +413,10 @@
     height  :auto;
     transition: height 2s ease;
   }
+  .grid-suspenser.revel_project::after{
+    content:"";
+    display: none !important;
+  }
   .grid-suspenser::after {
     content: "";
     position: absolute;
